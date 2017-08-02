@@ -48,10 +48,22 @@ chrome.contextMenus.onClicked.addListener(onClickHandler);
 
 // The onClicked callback function.
 function onClickHandler(info, tab) {
-  var sText = info.selectionText;
+//  var sText = info.selectionText;
+  var sText = getThought();
  // var url = "http://thoughtback.com/ajax/add_thought?thought=" + encodeURIComponent(sText); 
  // window.open(url, '_blank');
 (function(){var w=600,h=300,l=Math.round((screen.width-w)/2),t=Math.round((screen.height-h)/2),d=document,s=w.getSelection?w.getSelection():d.title;if(s=='')s=d.title;window.ft=window.open('http://thoughtback.com/b/?s='+encodeURIComponent(sText),'','left='+l+',top='+(t>0?t:0)+',width='+w+',height='+h+',personalbar=0,toolbar=0,scrollbars=0,resizable=1');})();
 };
 
+function getThought() {
+		var selected = 'Enter a thought.';
+			if (window.getSelection) {
+					selected = window.getSelection();
+			}	else if (document.getSelection) {
+					selected = document.getSelection)
+			}	else if ( document.selection) {
+					selected = document.selection.createRange().text;
+			}
+	return selected.
 
+}
