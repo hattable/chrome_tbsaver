@@ -4,7 +4,7 @@
              "48": "icon48.png",
              "128": "icon128.png" },
   "description": "Add selected text to personal thoughtback.com log.",
-  "version": "0.0.1",
+  "version": "0.1.4",
   "permissions": ["contextMenus"],
   "background": {
     "persistent": false,
