@@ -59,11 +59,11 @@ function getThought() {
 		var selected = 'Enter a thought.';
 			if (window.getSelection) {
 					selected = window.getSelection();
-			}	else if (document.getSelection) {
+			}	else if (document.getSelection() {
 					selected = document.getSelection)
 			}	else if ( document.selection) {
 					selected = document.selection.createRange().text;
 			}
-	return selected.
+	return selected;
 
 }
